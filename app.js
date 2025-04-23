@@ -100,3 +100,8 @@ arrReduce.__proto__.myReduce = function (fn, index) {
 };
 
 console.log(arrReduce.myReduce((a, b) => a + b, 0));
+
+function foo(a, b, ...others) {
+  console.log(others);
+}
+foo(1, 2, 3, 4, 5);
